@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario: Mejores Videojuegos de la Historia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("noche.gif"); 
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px #426688;
+        }
+
+        h1 {
+            text-align: center;
+            color: #06090a;
+        }
+
+        fieldset {
+            border: 2px solid #426688;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #06090a;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], input[type="date"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #426688;
+            border-radius: 4px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Mejores Videojuegos de la Historia</h1>
+
+    <!-- Cambié el action a un archivo "procesar.php" -->
+    <form action="procesar.php" method="POST">
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha" name="fecha_nacimiento" required>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias sobre Videojuegos</legend>
+
+            <label for="videojoc_favorit">¿Cuál es tu videojuego favorito?</label>
+            <input type="text" id="videojoc_favorit" name="videojoc_favorit" required>
+
+            <label for="consola">Selecciona tu consola favorita:</label>
+            <select id="consola" name="consola" required>
+                <option value="ps5">PlayStation</option>
+                <option value="xbox">Xbox Series X</option>
+                <option value="switch">Nintendo Switch</option>
+                <option value="pc">PC</option>
+            </select>
+
+            <label>Selecciona los géneros que te gustan:</label>
+            <input type="checkbox" id="accion" name="genero[]" value="Acción">
+            <label for="accion">Acción</label>
+
+            <input type="checkbox" id="aventura" name="genero[]" value="Aventura">
+            <label for="aventura">Aventura</label>
+
+            <input type="checkbox" id="rpg" name="genero[]" value="RPG">
+            <label for="rpg">RPG</label>
+
+            <input type="checkbox" id="terror" name="genero[]" value="Terror">
+            <label for="terror">Terror</label>
+
+            <input type="checkbox" id="simulacion" name="genero[]" value="Simulación">
+            <label for="simulacion">Simulación</label>
+
+            <input type="checkbox" id="battle_royale" name="genero[]" value="Battle Royale">
+            <label for="battle_royale">Battle Royale</label>
+
+            <input type="checkbox" id="estrategia" name="genero[]" value="Estrategia">
+            <label for="estrategia">Estrategia</label>
+
+            <input type="checkbox" id="lucha" name="genero[]" value="Lucha">
+            <label for="lucha">Lucha</label>
+
+            <input type="checkbox" id="moba" name="genero[]" value="MOBA">
+            <label for="moba">MOBA</label>
+
+            <input type="checkbox" id="mundo_abierto" name="genero[]" value="Mundo Abierto">
+            <label for="mundo_abierto">Mundo Abierto</label>
+
+            <input type="checkbox" id="otros" name="genero[]" value="Otros">
+            <label for="otros">Otros</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentarios Adicionales</legend>
+
+            <label for="comentarios">Deja un comentario sobre qué juegos te gustaría ver en el futuro:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" style="width:100%; border: 1px solid #426688; border-radius: 4px;"></textarea>
+
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</div>
+
+</body>
+</html>
+
+
+

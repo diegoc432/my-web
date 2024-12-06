@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mejores Videojuegos de la Historia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #426688;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-image: url("fondo.gift"); 
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #426688;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: static;
+            width: 100%;
+            bottom: 0;
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            color: #333;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #426688;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            color: #333;
+        }
+
+        @media screen and (max-width: 768px) {
+            .cards-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Los Mejores Videojuegos de la Historia</h1>
+        <p>Descubre los títulos que definieron generaciones de jugadores</p>
+    </header>
+
+    <nav>
+        <a href="#home">Inicio</a>
+        <a href="file:///C:/Users/Usuario/OneDrive/Dokumente/Pruebas3.html">Más información</a>
+        <a href="file:///C:/Users/Usuario/OneDrive/Dokumente/Galeria.html">Galería</a>
+        <a href="Formulario.html">Registarse</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <section id="home">
+        <h2>Los Títulos Más Icónicos</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="https://i.ebayimg.com/images/g/-c0AAOSwu5RkcByE/s-l1200.jpg" alt="Super Mario Bros" width="220" height="240">
+                <h3>Super Mario Bros (1985)</h3>
+                <p>Un juego clásico que definió la industria del videojuego, estableciendo muchas de las mecánicas modernas de plataformas.</p>
+                <div class="details">
+                    <p><strong>Género:</strong> Plataforma</p>
+                    <p><strong>Desarrollador:</strong> Nintendo</p>
+                    <p><strong>Plataformas:</strong> NES, SNES, y más</p>
+                    <a href="#">Más información</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://i.3djuegos.com/juegos/3866/the_legend_of_zelda_ocarina_of_time/fotos/ficha/the_legend_of_zelda_ocarina_of_time-1692464.webp" alt="The Legend of Zelda" width="300" height="320">
+                <h3>The Legend of Zelda: Ocarina of Time (1998)</h3>
+                <p>Una obra maestra de acción y aventura, introdujo innovaciones en narrativa y mecánicas en un mundo 3D.</p>
+                <div class="details">
+                    <p><strong>Género:</strong> Plataforma</p>
+                    <p><strong>Desarrollador:</strong> Nintendo</p>
+                    <p><strong>Plataformas:</strong> N64, GameCube y más</p>
+                    <a href="#">Más información</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://i.3djuegos.com/juegos/8274/last_of_us/fotos/ficha/last_of_us-2190366.webp" alt="The Last of Us" width="220" height="240">
+                <h3>The Last of Us (2013)</h3>
+                <p>Un título que marcó un antes y un después en cuanto a narrativa y jugabilidad en juegos de acción.</p>
+                <div class="details">
+                    <p><strong>Género:</strong> Aventura, Acción</p>
+                    <p><strong>Desarrollador:</strong> Naughty Dog</p>
+                    <p><strong>Plataformas:</strong> PlayStation 3, PlayStation 4, y más</p>
+                    <a href="#">Más información</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.nintendolife.com/316b5e27a11c4/tetris-cover.cover_300x.jpg" alt="Tetris" width="220" height="240">
+                <h3>Tetris (1984)</h3>
+                <p>Un juego de puzle que se convirtió en un fenómeno mundial y sigue siendo un icono de los juegos de lógica.</p>
+                <div class="details">
+                    <p><strong>Género:</strong> Puzle</p>
+                    <p><strong>Desarrollador:</strong> Alexey Pajitnov</p>
+                    <p><strong>Plataformas:</strong> Game Boy, PC, y más</p>
+                    <a href="#">Más información</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn.mobygames.com/covers/6990553-minecraft-xbox-360-edition-xbox-360-front-cover.jpg" alt="Minecraft" width="220" height="240">
+                <h3>Minecraft (2011)</h3>
+                <p>Uno de los juegos más vendidos y populares de la historia, con un mundo abierto donde los jugadores pueden crear y explorar libremente.</p>
+                <div class="details">
+                    <p><strong>Género:</strong> Aventura, Sandbox</p>
+                    <p><strong>Desarrollador:</strong> Mojang Studios</p>
+                    <p><strong>Plataformas:</strong> PC, Xbox, PlayStation, y más</p>
+                    <a href="#">Más información</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://i.3djuegos.com/juegos/13395/the_elder_scrolls_v_skyrim__special_edition/fotos/ficha/the_elder_scrolls_v_skyrim__special_edition-3417239.jpg" alt="The Elder Scrolls V: Skyrim" width="220" height="240">
+                <h3>The Elder Scrolls V: Skyrim (2011)</h3>
+                <p>Un juego de rol de mundo abierto muy apreciado por su libertad y profundidad narrativa.</p>
+                <div class="details">
+                    <p><strong>Género:</strong> RPG, Aventura</p>
+                    <p><strong>Desarrollador:</strong> Bethesda Game Studios</p>
+                    <p><strong>Plataformas:</strong> PC, PlayStation, Xbox, y más</p>
+                    <a href="#">Más información</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://th.bing.com/th/id/R.aeb3fa556192917893f4f62682d74722?rik=OxLt%2fZXc7vuECA&riu=http%3a%2f%2fwww.mobygames.com%2fimages%2fcovers%2fl%2f279025-grand-theft-auto-v-playstation-3-front-cover.jpg&ehk=QD%2fTiDLk8rEBChsZJaPr7IxE8QW94fz%2f5Gzva448Z5I%3d&risl=&pid=ImgRaw&r=0" alt="Grand Theft Auto V" width="220" height="240">
+                <h3>Grand Theft Auto V (2013)</h3>
+                <p>Un juego que ha batido récords con su enorme ciudad abierta y su emocionante historia.</p>
+                <div class="details">
+                    <p><strong>Género:</strong> Aventura, Acción</p>
+                    <p><strong>Desarrollador:</strong> Rockstar Games</p>
+                    <p><strong>Plataformas:</strong> PC, PlayStation, Xbox</p>
+                    <a href="#">Más información</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://www.mobygames.com/images/covers/l/542324-dark-souls-playstation-3-front-cover.jpg" alt="Dark Souls" width="220" height="240">
+                <h3>Dark Souls (2011)</h3>
+                <p>Un juego que se hizo famoso por su dificultad y su sistema de combate profundo y desafiante.</p>
+                <div class="details">
+                    <p><strong>Género:</strong> RPG, Acción</p>
+                    <p><strong>Desarrollador:</strong> FromSoftware</p>
+                    <p><strong>Plataformas:</strong> PC, PlayStation, Xbox</p>
+                    <a href="#">Más información</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://www.mobygames.com/images/covers/l/110100-half-life-2-windows-front-cover.jpg" alt="Half-Life 2" width="220" height="240">
+                <h3>Half-Life 2 (2004)</h3>
+                <p>Uno de los juegos de disparos en primera persona más influyentes de la historia, que innovó con la física en tiempo real.</p>
+                <div class="details">
+                    <p><strong>Género:</strong> FPS</p>
+                    <p><strong>Desarrollador:</strong> Valve</p>
+                    <p><strong>Plataformas:</strong> PC, Xbox</p>
+                    <a href="#">Más información</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://www.teameevee.com/wp-content/uploads/2022/04/caja-pokemon-rojo-azul.jpg" alt="Pokémon Rojo y Azul" width="550" height="520">
+                <h3>Pokémon Rojo y Azul (1996)</h3>
+                <p>Uno de los juegos que dio inicio a la franquicia Pokémon, que ha seguido creciendo hasta nuestros días.</p>
+                <div class="details">
+                    <p><strong>Género:</strong> RPG</p>
+                    <p><strong>Desarrollador:</strong> Game Freak</p>
+                    <p><strong>Plataformas:</strong> Game Boy</p>
+                    <a href="#">Más información</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://romsfun.com/wp-content/uploads/2019/11/November-15-2001-300x428.jpg" alt="Halo: Combat Evolved" width="220" height="240">
+                <h3>Halo: Combat Evolved (2001)</h3>
+                <p>Un juego de disparos en primera persona que se convirtió en un referente para las consolas de nueva generación en su momento.</p>
+                <div class="details">
+                    <p><strong>Género:</strong> FPS</p>
+                    <p><strong>Desarrollador:</strong> Bungie</p>
+                    <p><strong>Plataformas:</strong> Xbox, PC</p>
+                    <a href="#">Más información</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/brujo/images/8/81/The_Witcher_3_Portada.png/revision/latest?cb=20190902194644&path-prefix=es" alt="The Witcher 3: Wild Hunt" width="220" height="240">
+                <h3>The Witcher 3: Wild Hunt (2015)</h3>
+                <p>Un RPG de mundo abierto que destaca por su historia envolvente, personajes complejos y un vasto mundo para explorar.</p>
+                <div class="details">
+                    <p><strong>Género:</strong> RPG, Aventura</p>
+                    <p><strong>Desarrollador:</strong> CD Projekt Red</p>
+                    <p><strong>Plataformas:</strong> PC, PlayStation, Xbox, Nintendo Switch</p>
+                    <a href="#">Más información</a>
+                </div>
+            </div>
+            
+        </div>
+
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Videojuegos Históricos | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
